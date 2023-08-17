@@ -1,4 +1,4 @@
-# TS Template - TypeScript Project Template❤️️🍦🌸
+# TS Template - TypeScript Project Template❤️️🍉🌸
 TS Template is a TypeScript project template that provides a solid foundation for building TypeScript applications. It comes with a set of useful scripts, configurations, and development tools to streamline your development process. 
 
 ## Features
