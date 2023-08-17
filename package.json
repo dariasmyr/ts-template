@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "npm run prepare",
-    "start": "node dist/app.js",
-    "build": "npx etsc",
+    "start:dev": "npm run build && npm run start",
+    "start:prod": "npm run start",
+    "start": "node --enable-source-maps dist/src/app.js",
+    "build": "tsc",
     "prebuild": "rm -rf dist",
     "ts:check": "tsc --noEmit",
     "check": "npm run ts:check && npm run lint",

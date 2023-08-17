@@ -4,10 +4,11 @@
     "alwaysStrict": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
+    "target": "ES2017",
     "module": "CommonJS",
     "resolveJsonModule": true,
-    "esModuleInterop": true,
     "moduleResolution": "Node",
+    "esModuleInterop": true,
     "declaration": true,
     "declarationDir": "./dist",
     "allowJs": false,
@@ -15,10 +16,9 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES2017",
     "sourceMap": true,
     "baseUrl": "./src",
-    "outDir": "dist",
+    "outDir": "./dist",
     "noImplicitThis": true,
     "incremental": true,
     "strictBindCallApply": true,
@@ -36,8 +36,5 @@
     "suppressImplicitAnyIndexErrors": false,
     "noStrictGenericChecks": false
   },
-  "exclude": ["node_modules", "**/*.test.ts"],
-  "include": [
-    "src/**/*.ts"
-  ]
+  "exclude": ["node_modules", "dist"]
 }

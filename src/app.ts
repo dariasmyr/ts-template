@@ -8,4 +8,6 @@ class Calculator {
   }
 }
 
+console.log('Hello world!');
+
 export default Calculator;
