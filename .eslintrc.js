@@ -38,7 +38,12 @@ module.exports = {
   ignorePatterns: ['.eslintrc.js', 'dist'],
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-function-return-type': [
+      'error',
+      {
+        allowExpressions: true, // Allow return type to be inferred for arrow functions
+      },
+    ],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
@@ -71,9 +76,16 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
-    'dot-notation': 'off', // TODO: enable
+    'dot-notation': [
+      'error',
+      {
+        allowKeywords: true, // Allow using dot notation for reserved words (like 'class')
+      },
+    ],
     'no-use-before-define': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'no-console': 'error', // Example of handling console.log
+    'no-throw-literal': 'error', // Example of handling throw statements
   },
 };

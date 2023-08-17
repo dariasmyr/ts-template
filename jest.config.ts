@@ -1,7 +1,6 @@
 import packageJson from './package.json';
 
 export default {
-  allowJs: true,
   collectCoverageFrom: ['**/*.(t|j)s'],
   coverageDirectory: '../coverage',
   testTimeout: 30_000,
@@ -15,7 +14,7 @@ export default {
   rootDir: 'src',
   testRegex: '.*\\.test\\.ts$',
   transform: {
-    '^.+\\.(t|j)s$': 'ts-jest',
+    '^.+\\.(t|j)s$': ['ts-jest', { tsconfig: '<rootDir>/../tsconfig.json' }],
   },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
