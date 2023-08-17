@@ -1,11 +1,11 @@
 {
-  "name": "ts-project-template",
+  "name": "ts-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "postinstall": "npm run prepare",
-    "start:dev": "npm run build && npm run start",
+    "start:dev": "npm run build && npm start",
     "start:prod": "npm run start",
     "start": "node --enable-source-maps dist/src/app.js",
     "build": "tsc",
