@@ -85,7 +85,6 @@ module.exports = {
     'no-use-before-define': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
-    'no-console': 'error', // Example of handling console.log
-    'no-throw-literal': 'error', // Example of handling throw statements
+    'no-throw-literal': 'error',
   },
 };

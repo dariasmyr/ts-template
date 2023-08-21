@@ -5,7 +5,7 @@
     "strictNullChecks": true,
     "noImplicitAny": true,
     "target": "ES2017",
-    "module": "CommonJS",
+    "module": "NodeNext",
     "resolveJsonModule": true,
     "moduleResolution": "Node",
     "esModuleInterop": true,
