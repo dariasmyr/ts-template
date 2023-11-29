@@ -19,7 +19,7 @@ Before you begin, ensure you have the following installed on your machine:
 Clone the repository:
 
 ```bash
-npx degit github:dariasmyr/ts-template
+npx degit dariasmyr/ts-template my-app
 ```
 
 Install Dependencies:
