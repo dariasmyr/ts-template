@@ -19,10 +19,9 @@ module.exports = {
   extends: [
     'plugin:sonarjs/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:security/recommended',
+    'plugin:security/recommended-legacy',
     '@jetbrains',
     '@jetbrains/eslint-config/node',
-    'plugin:security/recommended',
     'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
     'plugin:jest/style',
