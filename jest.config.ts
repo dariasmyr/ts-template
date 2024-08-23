@@ -12,7 +12,7 @@ export default {
   },
   moduleFileExtensions: ['js', 'json', 'ts'],
   rootDir: 'src',
-  testRegex: '.*\\.test\\.ts$',
+  testRegex: String.raw`.*\.test\.ts$`,
   transform: {
     '^.+\\.(t|j)s$': ['ts-jest', { tsconfig: '<rootDir>/../tsconfig.json' }],
   },
